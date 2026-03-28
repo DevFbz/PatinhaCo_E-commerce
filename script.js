@@ -2,18 +2,18 @@
 // DATA
 // ════════════════════════════════════════════
 const PRODUCTS = [
-    {id:1,name:'Puffer Coat Clássico',cat:'Casacos',price:149.90,oldPrice:189.90,emoji:'🧥',badge:'sale',sizes:['PP','P','M','G','GG'],desc:'Casaco acolchoado premium com tecido impermeável e forro térmico. Perfeito para dias frios sem abrir mão do estilo.',col:'Moda Urbana'},
-    {id:2,name:'Hoodie Street Azul',cat:'Hoodies',price:129.90,emoji:'👕',badge:'hot',sizes:['PP','P','M','G','GG'],desc:'Moletom com capuz em algodão premium. Design ergonômico para máximo conforto e movimento livre.',col:'Inverno Premium'},
-    {id:3,name:'Vestido Floral Rosa',cat:'Vestidos',price:99.90,emoji:'👗',badge:'new',sizes:['PP','P','M','G'],desc:'Vestido delicado com estampa floral, ideal para passeios e ocasiões especiais.',col:'Festa no Parque'},
-    {id:4,name:'Camiseta Beach Club',cat:'Camisetas',price:69.90,emoji:'👙',badge:'new',sizes:['PP','P','M','G','GG'],desc:'Camiseta leve em malha fria, perfeita para os dias quentes de verão.',col:'Summer Vibes'},
-    {id:5,name:'Trench Coat Elegante',cat:'Casacos',price:219.90,oldPrice:269.90,emoji:'🥼',badge:'sale',sizes:['P','M','G','GG'],desc:'Sobretudo sofisticado para cães que amam estilo. Material de alta qualidade resistente ao vento.',col:'Moda Urbana'},
-    {id:6,name:'Bandana Glamour',cat:'Acessórios',price:39.90,emoji:'🎀',badge:'hot',sizes:['P','M','G'],desc:'Bandana luxuosa em veludo com detalhes em dourado. Transforma qualquer visual.',col:'Glamour Night'},
-    {id:7,name:'Hoodie Tie-Dye',cat:'Hoodies',price:149.90,emoji:'🌈',badge:'new',sizes:['PP','P','M','G','GG'],desc:'Moletom tie-dye exclusivo com cores vibrantes. Único e cheio de personalidade.',col:'Inverno Premium'},
-    {id:8,name:'Vestido Glam Night',cat:'Vestidos',price:179.90,emoji:'✨',sizes:['PP','P','M','G'],desc:'Vestido para ocasiões especiais com tecido brilhante e detalhes em renda.',col:'Glamour Night'},
-    {id:9,name:'Colete Jeans',cat:'Casacos',price:119.90,emoji:'🧶',badge:'hot',sizes:['PP','P','M','G','GG'],desc:'Colete em jeans premium com acabamento delavê. O must-have da temporada.',col:'Moda Urbana'},
-    {id:10,name:'Camiseta Tie-Dye',cat:'Camisetas',price:79.90,emoji:'🎽',badge:'new',sizes:['PP','P','M','G','GG'],desc:'Camiseta em tie-dye artesanal. Cada peça é única, assim como seu cão.',col:'Summer Vibes'},
-    {id:11,name:'Colleira Premium',cat:'Acessórios',price:59.90,emoji:'📿',sizes:['P','M','G'],desc:'Coleira em couro vegano com fivela dourada. Resistente e elegante.',col:'Glamour Night'},
-    {id:12,name:'Macacão Polar',cat:'Casacos',price:169.90,oldPrice:199.90,emoji:'🦺',badge:'sale',sizes:['PP','P','M','G','GG'],desc:'Macacão completo em fleece polar. Cobertura total do corpo para máximo aquecimento.',col:'Inverno Premium'},
+    {id:1, name:'Puffer Coat Clássico', cat:'Casacos',    price:149.90,oldPrice:189.90,img:'1.png',emoji:'🧥',badge:'sale',sizes:['PP','P','M','G','GG'],desc:'Casaco acolchoado premium com tecido impermeável e forro térmico. Perfeito para dias frios sem abrir mão do estilo.',col:'Moda Urbana'},
+    {id:2, name:'Hoodie Street Azul',   cat:'Hoodies',    price:129.90,               img:'2.png',emoji:'👕',badge:'hot', sizes:['PP','P','M','G','GG'],desc:'Moletom com capuz em algodão premium. Design ergonômico para máximo conforto e movimento livre.',col:'Inverno Premium'},
+    {id:3, name:'Vestido Floral Rosa',  cat:'Vestidos',   price:99.90,                img:'3.png',emoji:'👗',badge:'new', sizes:['PP','P','M','G'],      desc:'Vestido delicado com estampa floral, ideal para passeios e ocasiões especiais.',col:'Festa no Parque'},
+    {id:4, name:'Camiseta Beach Club',  cat:'Camisetas',  price:69.90,                img:'4.png',emoji:'👙',badge:'new', sizes:['PP','P','M','G','GG'],desc:'Camiseta leve em malha fria, perfeita para os dias quentes de verão.',col:'Summer Vibes'},
+    {id:5, name:'Trench Coat Elegante', cat:'Casacos',    price:219.90,oldPrice:269.90,img:'5.png',emoji:'🥼',badge:'sale',sizes:['P','M','G','GG'],      desc:'Sobretudo sofisticado para cães que amam estilo. Material de alta qualidade resistente ao vento.',col:'Moda Urbana'},
+    {id:6, name:'Bandana Glamour',      cat:'Acessórios', price:39.90,                img:'6.png',emoji:'🎀',badge:'hot', sizes:['P','M','G'],            desc:'Bandana luxuosa em veludo com detalhes em dourado. Transforma qualquer visual.',col:'Glamour Night'},
+    {id:7, name:'Hoodie Tie-Dye',       cat:'Hoodies',    price:149.90,               img:'7.png',emoji:'🌈',badge:'new', sizes:['PP','P','M','G','GG'],desc:'Moletom tie-dye exclusivo com cores vibrantes. Único e cheio de personalidade.',col:'Inverno Premium'},
+    {id:8, name:'Vestido Glam Night',   cat:'Vestidos',   price:179.90,               img:'8.png',emoji:'✨',             sizes:['PP','P','M','G'],      desc:'Vestido para ocasiões especiais com tecido brilhante e detalhes em renda.',col:'Glamour Night'},
+    {id:9, name:'Colete Jeans',         cat:'Casacos',    price:119.90,               img:'6.png',emoji:'🧶',badge:'hot', sizes:['PP','P','M','G','GG'],desc:'Colete em jeans premium com acabamento delavê. O must-have da temporada.',col:'Moda Urbana'},
+    {id:10,name:'Camiseta Tie-Dye',     cat:'Camisetas',  price:79.90,                img:'2.png',emoji:'🎽',badge:'new', sizes:['PP','P','M','G','GG'],desc:'Camiseta em tie-dye artesanal. Cada peça é única, assim como seu cão.',col:'Summer Vibes'},
+    {id:11,name:'Colleira Premium',     cat:'Acessórios', price:59.90,                img:'8.png',emoji:'📿',             sizes:['P','M','G'],            desc:'Coleira em couro vegano com fivela dourada. Resistente e elegante.',col:'Glamour Night'},
+    {id:12,name:'Macacão Polar',        cat:'Casacos',    price:169.90,oldPrice:199.90,img:'7.png',emoji:'🦺',badge:'sale',sizes:['PP','P','M','G','GG'],desc:'Macacão completo em fleece polar. Cobertura total do corpo para máximo aquecimento.',col:'Inverno Premium'},
   ];
   
   // ════════════════════════════════════════════
@@ -268,7 +268,7 @@ const PRODUCTS = [
         <button class="product-wishlist ${wishlist.includes(p.id)?'active':''}" onclick="toggleWish(${p.id},this)" title="Favoritar">
           ${wishlist.includes(p.id)?'❤️':'🤍'}
         </button>
-        <div class="product-img" onclick="openProductModal(${p.id})">${p.emoji}</div>
+        <div class="product-img" onclick="openProductModal(${p.id})"><img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;padding:8px"></div>
         <div class="product-body">
           <div class="product-category">${p.cat}</div>
           <div class="product-name">${p.name}</div>
@@ -302,7 +302,7 @@ const PRODUCTS = [
   function openProductModal(id){
     const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
     modalProduct=p;modalQty=1;modalSize=p.sizes[0];
-    document.getElementById('pmImg').innerHTML=`<span style="font-size:7rem">${p.emoji}</span>`;
+    document.getElementById('pmImg').innerHTML=`<img src="${p.img}" alt="${p.name}" style="height:100%;width:100%;object-fit:contain;padding:16px">`;
     document.getElementById('pmCat').textContent=p.cat;
     document.getElementById('pmName').textContent=p.name;
     document.getElementById('pmPrice').textContent=`R$ ${p.price.toFixed(2).replace('.',',')}`;
